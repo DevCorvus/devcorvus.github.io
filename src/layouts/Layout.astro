@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>DevCorvus</title>
+        <script
+            is:inline
+            src="https://kit.fontawesome.com/da377e052d.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="relative text-slate-100 bg-slate-900 overflow-hidden">
+            <main
+                class="container relative z-10 mx-auto fade-in transition-all"
+            >
+                <slot />
+            </main>
+        </div>
+    </body>
+</html>
+
+<style>
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    }
+</style>
