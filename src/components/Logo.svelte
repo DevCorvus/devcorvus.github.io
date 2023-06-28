@@ -2,7 +2,7 @@
     import devcorvusLogo from '/devcorvus-logo.svg';
 </script>
 
-<div class="mx-auto relative">
+<div class="mx-auto relative pointer-events-none">
     <img class="w-40 invert" src={devcorvusLogo} alt="DevCorvus's Logo" />
     <div class="animate-pulse absolute top-0 -z-10">
         <span
