@@ -6,20 +6,18 @@
 <SectionWrapper id="main">
     <div class="flex flex-col gap-8">
         <Logo />
-        <header>
-            <h1 class="flex flex-col gap-2">
-                <span class="ml-1">Hi I'm</span>
-                <div
-                    class="relative uppercase tracking-wide font-black text-4xl"
+        <header class="flex flex-col gap-2">
+            <span class="ml-1">Hi I'm</span>
+            <div
+                class="relative font-nunito uppercase tracking-wide font-black text-4xl"
+            >
+                <h1>Luis Portillo</h1>
+                <span
+                    class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
                 >
-                    <span> Luis Portillo</span>
-                    <span
-                        class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
-                    >
-                        Luis Portillo
-                    </span>
-                </div>
-            </h1>
+                    Luis Portillo
+                </span>
+            </div>
         </header>
         <div class="leading-relaxed">
             <p>
