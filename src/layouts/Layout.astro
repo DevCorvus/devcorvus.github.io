@@ -1,6 +1,8 @@
 ---
 import '@fontsource/montserrat';
 import '@fontsource/nunito';
+
+import Background from '../components/Background.svelte';
 ---
 
 <html lang="en">
@@ -24,18 +26,20 @@ import '@fontsource/nunito';
             >
                 <slot />
             </main>
+            <Background client:load />
         </div>
     </body>
 </html>
 
 <style>
     .fade-in {
-        animation: fadeIn 1s ease-in;
+        animation: fadeIn 1s ease-in-out;
     }
 
     @keyframes fadeIn {
         from {
             opacity: 0;
+            transform: scale(0.9);
         }
     }
 </style>
