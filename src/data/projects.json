@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Pictery",
+        "description": "Gallery manager",
+        "stack": [
+            "Typescript",
+            "Vue",
+            "TailwindCSS",
+            "Express",
+            "Prisma",
+            "Postgres"
+        ]
+    },
+    {
+        "title": "Relyn App",
+        "description": "Social media app",
+        "stack": [
+            "Javascript",
+            "Typescript",
+            "React.js",
+            "TailwindCSS",
+            "Express",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "DevBanner",
+        "description": "Personal blog",
+        "stack": ["PHP", "Laravel", "TailwindCSS", "Postgres"]
+    },
+    {
+        "title": "Pigeon Club",
+        "description": "Real-time chat",
+        "stack": [
+            "Javascript",
+            "Typescript",
+            "React.js",
+            "TailwindCSS",
+            "Express",
+            "Socket.IO",
+            "TypeORM",
+            "Postgres"
+        ]
+    }
+]
