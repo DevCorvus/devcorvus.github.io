@@ -1,8 +1,15 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import NextSectionLink from './NextSectionLink.svelte';
+
+    interface NextSectionProps {
+        id: string;
+        text: string;
+    }
 
     export let id: string;
     export let flexible = false;
+    export let next: NextSectionProps | null = null;
 
     let element: HTMLElement;
     let intersecting = false;
@@ -34,7 +41,13 @@
         class={`w-full h-full flex flex-col gap-10 transition duration-1000 ${
             intersecting ? '' : 'opacity-0 scale-90'
         }`}
+        class:pb-24={next && flexible}
     >
         <slot />
     </div>
+    {#if next}
+        <NextSectionLink to={next.id} visible={intersecting}>
+            {next.text}
+        </NextSectionLink>
+    {/if}
 </section>

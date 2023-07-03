@@ -8,7 +8,7 @@
 
 <svelte:window bind:innerWidth />
 
-<SectionWrapper id="main">
+<SectionWrapper id="main" next={{ id: 'showcase', text: 'Experience' }}>
     <div class="flex flex-col md:flex-row md:my-auto gap-8 md:gap-10">
         {#if innerWidth < screenSize.MEDIUM}
             <Logo />
