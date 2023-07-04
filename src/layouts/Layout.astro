@@ -3,6 +3,7 @@ import '@fontsource/montserrat';
 import '@fontsource/nunito';
 
 import Background from '../components/Background.svelte';
+import Surface from '../components/Surface.svelte';
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -16,6 +17,11 @@ import Background from '../components/Background.svelte';
             is:inline
             src="https://kit.fontawesome.com/da377e052d.js"
             crossorigin="anonymous"></script>
+        <link
+            is:inline
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
     </head>
     <body>
         <div
@@ -25,6 +31,7 @@ import Background from '../components/Background.svelte';
                 <slot />
             </main>
             <Background client:load />
+            <Surface client:load />
         </div>
     </body>
 </html>

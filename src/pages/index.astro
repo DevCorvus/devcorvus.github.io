@@ -2,9 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import MainSection from '../components/sections/MainSection.svelte';
 import ShowcaseSection from '../components/sections/ShowcaseSection.svelte';
+import BottomSection from '../components/sections/BottomSection.svelte';
 ---
 
 <Layout>
     <MainSection client:load />
     <ShowcaseSection client:load />
+    <BottomSection client:load />
 </Layout>

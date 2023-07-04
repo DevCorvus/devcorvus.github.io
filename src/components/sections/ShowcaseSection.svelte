@@ -4,7 +4,11 @@
     import projects from '../../data/projects.json';
 </script>
 
-<SectionWrapper id="showcase" flexible>
+<SectionWrapper
+    id="showcase"
+    flexible
+    next={{ id: 'contact', text: 'Contact' }}
+>
     <header class="text-2xl font-nunito font-bold">
         <h2>Projects</h2>
     </header>
