@@ -5,7 +5,7 @@
 
 <SectionWrapper id="contact">
     <div
-        class="flex flex-col items-center gap-8 lg:flex-row lg:mt-[10vh] xl:mt-[25vh]"
+        class="flex flex-col items-center gap-10 md:flex-row md:mt-[10vh] xl:mt-[25vh]"
     >
         <div class="flex-1 flex flex-col gap-8">
             <header class="text-2xl font-nunito font-bold">

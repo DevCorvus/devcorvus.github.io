@@ -23,7 +23,7 @@
                         observer.unobserve(element);
                     }
                 },
-                { threshold: 0.4 }
+                { threshold: 0.25 }
             );
 
             observer.observe(element);
@@ -35,13 +35,17 @@
 <section
     bind:this={element}
     {id}
-    class={`relative w-full ${flexible ? 'h-auto' : 'h-screen'} p-10 `}
+    class={`relative w-full min-h-screen ${
+        flexible ? 'h-auto' : 'h-auto sm:h-screen'
+    } p-10`}
 >
     <div
-        class={`w-full h-full flex flex-col gap-10 transition duration-1000 ${
-            intersecting ? '' : 'opacity-0 scale-90'
-        }`}
-        class:pb-24={next && flexible}
+        class={`
+            w-full h-full flex flex-col gap-10 transition duration-1000
+            ${intersecting ? '' : 'opacity-0 scale-90'}
+            ${next && !flexible ? 'pb-32 md:pb-0' : ''}
+            ${next && flexible ? 'pb-32' : ''}
+        `}
     >
         <slot />
     </div>

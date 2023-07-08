@@ -22,7 +22,9 @@
     });
 </script>
 
-<div class="w-screen h-screen absolute bottom-0 left-0 pointer-events-none">
+<div
+    class="w-screen h-60 z-10 relative md:absolute bottom-0 left-0 pointer-events-none"
+>
     <span
         class="absolute bottom-0 inline-block w-full h-24 blur-3xl bg-violet-200 opacity-50"
     />
