@@ -5,8 +5,9 @@
     export let title: string;
     export let description: string;
     export let stack: string[];
-    export let favicon: string;
-    export let preview: string;
+    export let favicon: string = '';
+    export let preview: string = '';
+    export let bgColorClass: string = '';
 
     let innerWidth = 0;
 </script>
@@ -24,11 +25,13 @@
         <div class="flex-1 flex flex-col gap-4 p-4">
             <div class="flex justify-between items-center">
                 <header class="flex items-center gap-2">
-                    <img
-                        class="w-8 md:w-10"
-                        src={'/images/projects/' + favicon}
-                        alt={title + ' favicon'}
-                    />
+                    {#if favicon}
+                        <img
+                            class="w-8 md:w-10"
+                            src={'/images/projects/' + favicon}
+                            alt={title + ' favicon'}
+                        />
+                    {/if}
                     <h3 class="text-xl md:text-3xl font-bold drop-shadow">
                         {title}
                     </h3>
@@ -59,17 +62,25 @@
                 {/each}
             </div>
         </div>
-        {#if innerWidth >= screenSize.MEDIUM}
-            <div
-                class="w-[40%] h-full bg-cover bg-center bg-no-repeat border border-slate-700 rounded-lg"
-                style={`background-image: url(/images/projects/${preview})`}
-            />
+        {#if preview}
+            {#if innerWidth >= screenSize.MEDIUM}
+                <div
+                    class="w-[40%] h-full bg-cover bg-center bg-no-repeat border border-slate-700 rounded-lg"
+                    style={`background-image: url(/images/projects/${preview})`}
+                />
+            {:else}
+                <img
+                    src={`/images/projects/${preview}`}
+                    class="w-full h-auto border border-slate-700"
+                    alt={`${title} preview`}
+                />
+            {/if}
         {:else}
-            <img
-                src={`/images/projects/${preview}`}
-                class="w-full h-auto border border-slate-700"
-                alt={`${title} preview`}
-            />
+            <div
+                class={`${bgColorClass} flex items-center justify-center w-full h-40 md:h-full md:w-[40%] border border-slate-700 rounded-lg`}
+            >
+                <i class="fa-solid fa-code w-20 h-20 md:w-32 md:h-32" />
+            </div>
         {/if}
         <div class="p-4 md:hidden flex gap-2 flex-wrap mt-auto">
             {#each stack as tech}

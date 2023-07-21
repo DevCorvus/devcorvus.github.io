@@ -2,15 +2,21 @@
     {
         "title": "DevCorvus (Old)",
         "description": "Personal website and portfolio",
-        "stack": ["Typescript", "Next.js", "TailwindCSS"],
+        "stack": ["TypeScript", "Next.js", "TailwindCSS"],
         "favicon": "devcorvus-favicon.png",
         "preview": "devcorvus.webp"
+    },
+    {
+        "title": "Rusty demo",
+        "description": "Desktop app and API with authentication (It's blazingly fast)",
+        "stack": ["Rust", "Actix Web", "Tauri", "Yew", "SQLite"],
+        "bgColorClass": "bg-orange-500"
     },
     {
         "title": "Pictery",
         "description": "Gallery management app",
         "stack": [
-            "Typescript",
+            "TypeScript",
             "Vue.js",
             "TailwindCSS",
             "Express",
@@ -24,8 +30,8 @@
         "title": "Relyn App",
         "description": "Social media app",
         "stack": [
-            "Javascript",
-            "Typescript",
+            "JavaScript",
+            "TypeScript",
             "React.js",
             "TailwindCSS",
             "Express",
@@ -35,10 +41,16 @@
         "preview": "relyn.webp"
     },
     {
+        "title": "Goty",
+        "description": "Go API with authentication (demo)",
+        "stack": ["Go", "SQLite"],
+        "bgColorClass": "bg-sky-500"
+    },
+    {
         "title": "Baibai",
         "description": "E-Commerce and API (demo)",
         "stack": [
-            "Typescript",
+            "TypeScript",
             "React.js",
             "TailwindCSS",
             "daisyUI",
@@ -53,8 +65,8 @@
         "title": "Pigeon Club",
         "description": "Real-time chat (demo)",
         "stack": [
-            "Javascript",
-            "Typescript",
+            "JavaScript",
+            "TypeScript",
             "React.js",
             "TailwindCSS",
             "Express",
@@ -64,6 +76,12 @@
         ],
         "favicon": "pigeonclub-favicon.png",
         "preview": "pigeonclub.webp"
+    },
+    {
+        "title": "Nest GraphQL demo",
+        "description": "Simple todo API with authentication",
+        "stack": ["TypeScript", "Nest.js", "TypeORM", "SQLite"],
+        "bgColorClass": "bg-rose-500"
     },
     {
         "title": "Django Todo App",
@@ -78,6 +96,12 @@
         "stack": ["PHP", "Laravel", "TailwindCSS", "Postgres"],
         "favicon": "devbanner-favicon.png",
         "preview": "devbanner.webp"
+    },
+    {
+        "title": "Next tRPC demo",
+        "description": "Simple CRUD with authentication",
+        "stack": ["TypeScript", "Next.js", "tRPC", "Prisma", "SQLite"],
+        "bgColorClass": "bg-blue-500"
     },
     {
         "title": "Flask Animals",
