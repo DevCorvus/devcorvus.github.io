@@ -1,15 +1,24 @@
 [
     {
+        "title": "DevCorvus (Old)",
+        "description": "Personal website and portfolio",
+        "stack": ["Typescript", "Next.js", "TailwindCSS"],
+        "favicon": "devcorvus-favicon.png",
+        "preview": "devcorvus.webp"
+    },
+    {
         "title": "Pictery",
-        "description": "Gallery manager",
+        "description": "Gallery management app",
         "stack": [
             "Typescript",
-            "Vue",
+            "Vue.js",
             "TailwindCSS",
             "Express",
             "Prisma",
             "Postgres"
-        ]
+        ],
+        "favicon": "pictery-favicon.png",
+        "preview": "pictery.webp"
     },
     {
         "title": "Relyn App",
@@ -21,16 +30,28 @@
             "TailwindCSS",
             "Express",
             "MongoDB"
-        ]
+        ],
+        "favicon": "relyn-favicon.png",
+        "preview": "relyn.webp"
     },
     {
-        "title": "DevBanner",
-        "description": "Personal blog",
-        "stack": ["PHP", "Laravel", "TailwindCSS", "Postgres"]
+        "title": "Baibai",
+        "description": "E-Commerce and API (demo)",
+        "stack": [
+            "Typescript",
+            "React.js",
+            "TailwindCSS",
+            "daisyUI",
+            "Nest.js",
+            "Sequelize",
+            "SQLite"
+        ],
+        "favicon": "baibai-favicon.png",
+        "preview": "baibai.webp"
     },
     {
         "title": "Pigeon Club",
-        "description": "Real-time chat",
+        "description": "Real-time chat (demo)",
         "stack": [
             "Javascript",
             "Typescript",
@@ -40,6 +61,29 @@
             "Socket.IO",
             "TypeORM",
             "Postgres"
-        ]
+        ],
+        "favicon": "pigeonclub-favicon.png",
+        "preview": "pigeonclub.webp"
+    },
+    {
+        "title": "Django Todo App",
+        "description": "Group-based todo app",
+        "stack": ["Python", "Django", "TailwindCSS", "Postgres"],
+        "favicon": "djangotodoapp-favicon.png",
+        "preview": "djangotodoapp.webp"
+    },
+    {
+        "title": "DevBanner",
+        "description": "Personal tech blog",
+        "stack": ["PHP", "Laravel", "TailwindCSS", "Postgres"],
+        "favicon": "devbanner-favicon.png",
+        "preview": "devbanner.webp"
+    },
+    {
+        "title": "Flask Animals",
+        "description": "Flask CRUD and API (demo)",
+        "stack": ["Python", "Flask", "Bootstrap", "Postgres"],
+        "favicon": "flaskanimals-favicon.png",
+        "preview": "flaskanimals.webp"
     }
 ]

@@ -1,7 +1,7 @@
 <script lang="ts">
-    import layeredWaves from '/layered-waves.svg';
-    import flag from '/flag.svg';
-    import satelliteImage from '/satellite.png';
+    import layeredWaves from '/images/layered-waves.svg';
+    import flag from '/images/flag.svg';
+    import satelliteImage from '/images/satellite.png';
     import { onMount } from 'svelte';
 
     let satellite: HTMLDivElement;

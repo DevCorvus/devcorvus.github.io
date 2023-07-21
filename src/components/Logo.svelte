@@ -1,5 +1,5 @@
 <script lang="ts">
-    import devcorvusLogo from '/devcorvus-logo.svg';
+    import devcorvusLogo from '/images/devcorvus-logo.svg';
 </script>
 
 <div class="mx-auto relative pointer-events-none">
