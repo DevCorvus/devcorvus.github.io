@@ -38,9 +38,7 @@
                 </p>
             </div>
         </div>
-        <div
-            class="flex-1 flex flex-col items-center justify-around xl:justify-between"
-        >
+        <div class="flex-1 flex flex-col items-center justify-around">
             {#if innerWidth >= screenSize.MEDIUM}
                 <Logo />
             {/if}
