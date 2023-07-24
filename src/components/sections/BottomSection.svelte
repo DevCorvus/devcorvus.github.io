@@ -5,12 +5,56 @@
 
 <SectionWrapper id="contact">
     <div
-        class="flex flex-col items-center gap-10 md:flex-row md:mt-[10vh] xl:mt-[25vh]"
+        class="flex flex-col items-center gap-10 md:flex-row-reverse md:mt-[10vh] xl:mt-[25vh]"
     >
         <div class="flex-1 flex flex-col gap-8">
-            <header class="text-2xl font-nunito font-bold">
-                <h2>Let's make it!</h2>
-            </header>
+            <div class="flex items-center justify-between">
+                <header class="text-2xl font-nunito font-bold">
+                    <h2>✨ Let's make it!</h2>
+                </header>
+                <ul class="flex items-center gap-2 sm:gap-4 text-slate-400">
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
+                        >
+                            <i
+                                class="fa-solid fa-envelope w-5 h-5 sm:w-6 md:h-6"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
+                        >
+                            <i
+                                class="fa-brands fa-github w-5 h-5 sm:w-6 md:h-6"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
+                        >
+                            <i
+                                class="fa-brands fa-linkedin w-5 h-5 md:w-6 md:h-6"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
+                        >
+                            <i
+                                class="fa-brands fa-discord w-5 h-5 md:w-6 md:h-6"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. At

@@ -96,7 +96,7 @@
 
     .paper-grid {
         --grid-color: rgb(196 181 253);
-        background-size: 75px 75px;
+        background-size: 100px 100px;
         background-image: linear-gradient(
                 to right,
                 var(--grid-color) 1px,

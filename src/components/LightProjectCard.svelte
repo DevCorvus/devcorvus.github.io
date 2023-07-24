@@ -15,7 +15,7 @@
                 <span class={`font-bold ${colorClass}`}>{title}</span>
                 <a
                     href="#"
-                    class="flex item-center bg-slate-500 bg-opacity-50 p-1.5 rounded-full shadow-md"
+                    class="flex item-center bg-slate-500 bg-opacity-50 hover:text-slate-100 focus:text-slate-100 hover:scale-110 focus:scale-110 transition p-1.5 rounded-full shadow-md"
                 >
                     <i class="fa-brands fa-github w-6 h-6" />
                 </a>

@@ -26,7 +26,7 @@
     next={{ id: 'contact', text: 'Contact' }}
 >
     <header class="text-2xl font-nunito font-bold">
-        <h2>Projects</h2>
+        <h2>✨ Projects</h2>
     </header>
     <div class="flex flex-col items-center gap-8 md:gap-10 xl:gap-16">
         {#each projectsWithPreviewAndAlternateReverse as project}

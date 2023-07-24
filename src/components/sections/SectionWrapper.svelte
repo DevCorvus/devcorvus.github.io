@@ -36,8 +36,8 @@
     bind:this={element}
     {id}
     class={`relative w-full min-h-screen ${
-        flexible ? 'h-auto' : 'h-auto sm:h-screen'
-    } p-10`}
+        flexible ? 'h-auto' : 'h-auto md:h-screen'
+    } p-6 md:p-10`}
 >
     <div
         class={`

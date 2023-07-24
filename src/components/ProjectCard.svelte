@@ -14,7 +14,7 @@
 <svelte:window bind:innerWidth />
 
 <section
-    class="relative w-full h-full md:h-48 lg:h-56 xl:h-60 bg-slate-800 bg-opacity-75 backdrop-blur-[2px] shadow-md shadow-slate-800 rounded-lg overflow-hidden"
+    class="relative w-full h-full md:h-48 lg:h-56 xl:h-72 bg-slate-800 bg-opacity-75 backdrop-blur-[2px] shadow-md shadow-slate-800 rounded-lg overflow-hidden"
 >
     <div
         class={`h-full flex flex-col justify-between gap-2 md:gap-8 ${
@@ -36,13 +36,13 @@
                 <div class="flex gap-2">
                     <a
                         href="#"
-                        class="flex item-center bg-slate-500 bg-opacity-50 p-1.5 rounded-full shadow-md"
+                        class="flex item-center bg-slate-500 bg-opacity-50 hover:text-slate-100 focus:text-slate-100 hover:scale-110 focus:scale-110 transition p-1.5 rounded-full shadow-md"
                     >
                         <i class="fa-solid fa-link w-6 h-6" />
                     </a>
                     <a
                         href="#"
-                        class="flex item-center bg-slate-500 bg-opacity-50 p-1.5 rounded-full shadow-md"
+                        class="flex item-center bg-slate-500 bg-opacity-50 hover:text-slate-100 focus:text-slate-100 hover:scale-110 focus:scale-110 transition p-1.5 rounded-full shadow-md"
                     >
                         <i class="fa-brands fa-github w-6 h-6" />
                     </a>

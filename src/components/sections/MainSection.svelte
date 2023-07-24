@@ -9,7 +9,9 @@
 <svelte:window bind:innerWidth />
 
 <SectionWrapper id="main" next={{ id: 'showcase', text: 'Experience' }}>
-    <div class="flex flex-col md:flex-row md:my-auto gap-8 md:gap-10">
+    <div
+        class="flex flex-col md:flex-row-reverse md:my-auto gap-10 text-center md:text-left"
+    >
         {#if innerWidth < screenSize.MEDIUM}
             <Logo />
         {/if}
@@ -26,6 +28,11 @@
                         Luis Portillo
                     </span>
                 </div>
+                <span
+                    class="font-semibold font-nunito uppercase bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-slate-100"
+                >
+                    Full-stack developer
+                </span>
             </header>
             <div class="leading-relaxed">
                 <p>
@@ -43,7 +50,7 @@
                 <Logo />
             {/if}
             <div
-                class="flex justify-between md:justify-center md:gap-8 text-slate-900 w-full"
+                class="flex w-full max-w-sm md:max-w-none justify-around md:justify-center md:gap-10 text-slate-900"
             >
                 <button
                     class="flex items-center justify-center p-4 outline-none bg-slate-100 transition duration-300 hover:text-violet-600 focus:text-violet-600 rounded-xl w-12 h-12"
