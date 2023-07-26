@@ -7,7 +7,7 @@
 <a
     title={t('langSwitcher')}
     href={`/${langToSwitch}`}
-    class="z-50 absolute top-3 right-3 md:top-5 md:right-5"
+    class="z-50 absolute top-3 right-3 md:top-5 md:right-5 text-slate-500 hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
 >
     <svg
         xmlns="http://www.w3.org/2000/svg"
