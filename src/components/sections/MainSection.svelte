@@ -2,6 +2,7 @@
     import SectionWrapper from './SectionWrapper.svelte';
     import Logo from '../Logo.svelte';
     import { screenSize } from '../../constants';
+    import { t } from 'i18next';
 
     let innerWidth: number;
 </script>
@@ -17,7 +18,7 @@
         {/if}
         <div class="flex-1 flex flex-col gap-8">
             <header class="flex flex-col gap-2">
-                <span class="ml-1">Hi I'm</span>
+                <span class="ml-1">{t('section.main.greet')}</span>
                 <div
                     class="relative font-nunito uppercase tracking-wide font-black text-4xl"
                 >
@@ -31,7 +32,7 @@
                 <span
                     class="font-semibold font-nunito uppercase bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-slate-100"
                 >
-                    Full-stack developer
+                    {t('section.main.subtitle')}
                 </span>
             </header>
             <div class="leading-relaxed">
