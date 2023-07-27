@@ -3,13 +3,25 @@
     import Logo from '../Logo.svelte';
     import { screenSize } from '../../constants';
     import { t } from 'i18next';
+    import { fade } from 'svelte/transition';
 
     let innerWidth: number;
+    let showAlterName = false;
+
+    setInterval(() => {
+        showAlterName = true;
+        setTimeout(() => {
+            showAlterName = false;
+        }, 2000);
+    }, 6000);
 </script>
 
 <svelte:window bind:innerWidth />
 
-<SectionWrapper id="main" next={{ id: 'showcase', text: 'Experience' }}>
+<SectionWrapper
+    id="main"
+    next={{ id: 'showcase', text: t('sections.main.next') }}
+>
     <div
         class="flex flex-col md:flex-row-reverse md:my-auto gap-10 text-center md:text-left"
     >
@@ -18,32 +30,39 @@
         {/if}
         <div class="flex-1 flex flex-col gap-8">
             <header class="flex flex-col gap-2">
-                <span class="ml-1">{t('section.main.greet')}</span>
+                <span class="ml-1">{t('sections.main.greet')}</span>
                 <div
                     class="relative font-nunito uppercase tracking-wide font-black text-4xl"
                 >
-                    <h1>Luis Portillo</h1>
-                    <span
-                        class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
-                    >
-                        Luis Portillo
-                    </span>
+                    <h1>
+                        {#if !showAlterName}
+                            <span in:fade>Luis Portillo</span>
+                        {:else}
+                            <span in:fade>DevCorvus</span>
+                        {/if}
+                    </h1>
+                    {#if !showAlterName}
+                        <span
+                            class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
+                        >
+                            Luis Portillo
+                        </span>
+                    {:else}
+                        <span
+                            class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
+                        >
+                            DevCorvus
+                        </span>
+                    {/if}
                 </div>
                 <span
                     class="font-semibold font-nunito uppercase bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-slate-100"
                 >
-                    {t('section.main.subtitle')}
+                    {t('sections.main.subtitle')}
                 </span>
             </header>
             <div class="leading-relaxed">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quibusdam minus veritatis architecto nobis amet sapiente
-                    fugit incidunt quod aspernatur qui ipsam quidem error ut,
-                    dicta voluptatibus minima delectus! Officia repellendus
-                    dolorem quos eaque! Repellendus blanditiis incidunt minus
-                    reiciendis aut molestias.
-                </p>
+                <p>{t('sections.main.content')}</p>
             </div>
         </div>
         <div class="flex-1 flex flex-col items-center justify-around">

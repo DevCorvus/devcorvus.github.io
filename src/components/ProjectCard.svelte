@@ -1,10 +1,11 @@
 <script lang="ts">
     import { screenSize } from '../constants';
-    export let reverse: boolean;
+    import type { Tech } from '../types';
 
+    export let reverse: boolean;
     export let title: string;
     export let description: string;
-    export let stack: string[];
+    export let stack: Tech[];
     export let favicon: string;
     export let preview: string;
 

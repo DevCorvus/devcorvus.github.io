@@ -1,9 +1,36 @@
 {
     "langSwitcher": "Cambiar a Inglés",
-    "section": {
+    "sections": {
         "main": {
             "greet": "Hola, soy",
-            "subtitle": "Desarrollador Full-stack"
+            "subtitle": "Desarrollador Full-stack",
+            "content": "Especializado en la construcción de servicios y aplicaciones web hechos a medida desde cero, sobretodo del lado del servidor. Apasionado sobre lo que hago, mi prioridad es la calidad y la atención al detalle, ¡tanto para el software como para las personas!",
+            "next": "Experiencia"
+        },
+        "showcase": {
+            "title": "Proyectos",
+            "subtitle": "Otros",
+            "projects": {
+                "old-portfolio": "Sitio web personal y portafolio",
+                "pictery": "Gestor de galerías de imágenes",
+                "relyn": "Aplicación de red social",
+                "baibai": "Comercio electrónico y API (demo)",
+                "pigeon-club": "Chat en tiempo real (demo)",
+                "django-todo-app": "Aplicación de tareas basada en grupos",
+                "devbanner": "Blog personal sobre tecnología",
+                "flask-animals": "CRUD y API sobre animales (demo)",
+                "rusty": "Aplicación de escritorio y API con gestión de usuarios",
+                "goty": "API con gestión de usuarios (demo)",
+                "nest-graphql-demo": "API de tareas sencilla con gestión de usuarios",
+                "next-trpc-demo": "CRUD simple con gestión de usuarios"
+            },
+            "message": "Puedes ver aún más proyectos en mi",
+            "next": "Contacto"
+        },
+        "bottom": {
+            "title": "¡Hagámoslo!",
+            "content": "Ofrezco una amplia versatilidad en el uso de distintas tecnologías, herramientas y metodologías de desarrollo para entregar resultados de la manera más eficiente."
         }
-    }
+    },
+    "satellite": "¡Contáctame!"
 }

@@ -1,6 +1,7 @@
 <script lang="ts">
     import SectionWrapper from './SectionWrapper.svelte';
     import Tech from '../Tech.svelte';
+    import { t } from 'i18next';
 </script>
 
 <SectionWrapper id="contact">
@@ -10,7 +11,7 @@
         <div class="flex-1 flex flex-col gap-8">
             <div class="flex items-center justify-between">
                 <header class="text-2xl font-nunito font-bold">
-                    <h2>✨ Let's make it!</h2>
+                    <h2>✨ {t('sections.bottom.title')}</h2>
                 </header>
                 <ul class="flex items-center gap-2 sm:gap-4 text-slate-400">
                     <li>
@@ -56,11 +57,7 @@
                 </ul>
             </div>
             <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                    excepturi repellendus voluptatibus corporis nesciunt quod,
-                    dolorum odio error commodi alias!
-                </p>
+                <p>{t('sections.bottom.content')}</p>
             </div>
         </div>
         <div class="flex-1 flex justify-center">

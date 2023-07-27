@@ -1,9 +1,36 @@
 {
     "langSwitcher": "Switch to Spanish",
-    "section": {
+    "sections": {
         "main": {
             "greet": "Hi I'm",
-            "subtitle": "Full-stack developer"
+            "subtitle": "Full-stack developer",
+            "content": "Specialized in building custom web services and applications from scratch, especially on the server side. Passionate about what I do, my priority is quality and attention to detail, both for software and people!",
+            "next": "Experience"
+        },
+        "showcase": {
+            "title": "Projects",
+            "subtitle": "Others",
+            "projects": {
+                "old-portfolio": "Personal website and portfolio",
+                "pictery": "Gallery management app",
+                "relyn": "Social media app",
+                "baibai": "E-Commerce and API (demo)",
+                "pigeon-club": "Real-time chat (demo)",
+                "django-todo-app": "Group-based todo app",
+                "devbanner": "Personal tech blog",
+                "flask-animals": "CRUD and API about animals (demo)",
+                "rusty": "Desktop app and API with auth",
+                "goty": "API with auth (demo)",
+                "nest-graphql-demo": "Simple todo API with auth",
+                "next-trpc-demo": "Simple CRUD with auth"
+            },
+            "message": "You can check out even more projects on my",
+            "next": "Contact"
+        },
+        "bottom": {
+            "title": "Let's make it!",
+            "content": "Offering a wide versatility in the use of different technologies, tools and development methodologies to deliver results in the most efficient way."
         }
-    }
+    },
+    "satellite": "Contact me!"
 }

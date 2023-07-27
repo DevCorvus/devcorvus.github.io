@@ -3,6 +3,7 @@
     import flag from '/images/flag.svg';
     import satelliteImage from '/images/satellite.png';
     import { onMount } from 'svelte';
+    import { t } from 'i18next';
 
     let satellite: HTMLDivElement;
 
@@ -47,7 +48,7 @@
             <span
                 class="py-1 px-2 text-violet-200 bg-violet-400 bg-opacity-25 rounded-xl rounded-bl-none text-sm"
             >
-                Contact me!
+                {t('satellite')}
             </span>
         </div>
         <img

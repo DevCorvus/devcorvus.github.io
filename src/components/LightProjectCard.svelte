@@ -1,7 +1,9 @@
 <script lang="ts">
+    import type { Tech } from '../types';
+
     export let title: string;
     export let description: string;
-    export let stack: string[];
+    export let stack: Tech[];
     export let colorClass: string;
 </script>
 
