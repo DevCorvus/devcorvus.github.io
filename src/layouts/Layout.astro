@@ -35,8 +35,8 @@ import Surface from '../components/Surface.svelte';
             <main class="max-w-screen-xl relative z-10 mx-auto transition-all">
                 <slot />
             </main>
-            <Surface client:load />
             <Background client:load />
+            <Surface client:load />
         </div>
     </body>
 </html>

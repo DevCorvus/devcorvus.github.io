@@ -2,8 +2,8 @@
     export let icon: string;
 </script>
 
-<div
-    class="flex items-center justify-center p-2.5 text-3xl text-slate-100 bg-slate-700 rounded-full"
+<li
+    class="flex items-center justify-center p-2.5 text-3xl text-slate-100 bg-slate-700 bg-opacity-50 backdrop-blur-[2px] rounded-full"
 >
     <i class={icon} />
-</div>
+</li>

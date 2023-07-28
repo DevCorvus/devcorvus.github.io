@@ -10,7 +10,7 @@
     />
     <div class="animate-pulse absolute top-0 -z-10">
         <span
-            class="bg-violet-500 opacity-50 w-40 h-36 md:w-52 md:h-44 inline-block rounded-full blur-2xl"
+            class="bg-violet-500 opacity-50 w-40 h-36 md:w-52 md:h-48 inline-block rounded-full blur-2xl"
         />
     </div>
 </div>

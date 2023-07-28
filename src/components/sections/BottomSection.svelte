@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="flex-1 flex justify-center">
-            <div class="grid grid-cols-5 gap-2">
+            <ul class="grid grid-cols-5 gap-2">
                 <Tech icon="devicon-html5-plain" />
                 <Tech icon="devicon-css3-plain" />
                 <Tech icon="devicon-javascript-plain" />
@@ -85,7 +85,7 @@
                 <Tech icon="devicon-docker-plain" />
                 <Tech icon="devicon-linux-plain" />
                 <Tech icon="devicon-git-plain" />
-            </div>
+            </ul>
         </div>
     </div>
 </SectionWrapper>
