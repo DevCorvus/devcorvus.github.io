@@ -1,5 +1,6 @@
 {
     "langSwitcher": "Switch to Spanish",
+    "copy": "Copied!",
     "sections": {
         "main": {
             "greet": "Hi I'm",
@@ -21,7 +22,7 @@
                 "flask-animals": "CRUD and API about animals (demo)",
                 "rusty": "Desktop app and API with auth",
                 "goty": "API with auth (demo)",
-                "nest-graphql-demo": "Simple todo API with auth",
+                "nestjs-graphql-demo": "Simple todo API with auth",
                 "next-trpc-demo": "Simple CRUD with auth"
             },
             "message": "You can check out even more projects on my",

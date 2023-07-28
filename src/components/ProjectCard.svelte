@@ -8,6 +8,8 @@
     export let stack: Tech[];
     export let favicon: string;
     export let preview: string;
+    export let repo: string;
+    export let site = '';
 
     let innerWidth = 0;
 </script>
@@ -35,14 +37,18 @@
                     </h3>
                 </header>
                 <div class="flex gap-2">
+                    {#if site}
+                        <a
+                            href={site}
+                            target="_blank"
+                            class="flex item-center bg-slate-500 bg-opacity-50 hover:text-slate-100 focus:text-slate-100 hover:scale-110 focus:scale-110 transition p-1.5 rounded-full shadow-md"
+                        >
+                            <i class="fa-solid fa-link w-6 h-6" />
+                        </a>
+                    {/if}
                     <a
-                        href="#"
-                        class="flex item-center bg-slate-500 bg-opacity-50 hover:text-slate-100 focus:text-slate-100 hover:scale-110 focus:scale-110 transition p-1.5 rounded-full shadow-md"
-                    >
-                        <i class="fa-solid fa-link w-6 h-6" />
-                    </a>
-                    <a
-                        href="#"
+                        href={repo}
+                        target="_blank"
                         class="flex item-center bg-slate-500 bg-opacity-50 hover:text-slate-100 focus:text-slate-100 hover:scale-110 focus:scale-110 transition p-1.5 rounded-full shadow-md"
                     >
                         <i class="fa-brands fa-github w-6 h-6" />

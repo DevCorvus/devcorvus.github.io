@@ -1,7 +1,8 @@
 <script lang="ts">
     import SectionWrapper from './SectionWrapper.svelte';
     import Logo from '../Logo.svelte';
-    import { screenSize } from '../../constants';
+    import DiscordButton from '../DiscordButton.svelte';
+    import { screenSize, links } from '../../constants';
     import { t } from 'i18next';
     import { fade } from 'svelte/transition';
 
@@ -72,34 +73,29 @@
             <div
                 class="flex w-full max-w-sm md:max-w-none justify-around md:justify-center md:gap-10 text-slate-900"
             >
-                <button
+                <a
+                    href={'mailto:' + links.EMAIL}
+                    target="_blank"
                     class="flex items-center justify-center p-4 outline-none bg-slate-100 transition duration-300 hover:text-violet-600 focus:text-violet-600 rounded-xl w-12 h-12"
                 >
                     <i class="fa-solid fa-envelope w-8 h-8" />
-                </button>
-                <button
+                </a>
+                <a
+                    href={links.GITHUB}
+                    target="_blank"
                     class="flex items-center justify-center p-4 outline-none bg-slate-100 transition duration-300 hover:text-violet-600 focus:text-violet-600 rounded-xl w-12 h-12"
                 >
                     <i class="fa-brands fa-github w-8 h-8" />
-                </button>
-                <button
+                </a>
+                <a
+                    href={links.LINKEDIN}
+                    target="_blank"
                     class="flex items-center justify-center p-4 outline-none bg-slate-100 transition duration-300 hover:text-violet-600 focus:text-violet-600 rounded-xl w-12 h-12"
                 >
                     <i class="fa-brands fa-linkedin w-8 h-8" />
-                </button>
-                <button
-                    class="flex items-center justify-center p-4 outline-none bg-slate-100 transition duration-300 hover:text-violet-600 focus:text-violet-600 rounded-xl w-12 h-12"
-                >
-                    <i class="fa-brands fa-discord w-8 h-8" />
-                </button>
+                </a>
+                <DiscordButton />
             </div>
         </div>
     </div>
 </SectionWrapper>
-
-<style>
-    button:hover,
-    button:focus {
-        box-shadow: 0 0 25px rgba(139, 92, 246, 0.75);
-    }
-</style>

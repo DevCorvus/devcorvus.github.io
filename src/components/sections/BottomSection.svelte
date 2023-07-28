@@ -1,6 +1,8 @@
 <script lang="ts">
     import SectionWrapper from './SectionWrapper.svelte';
     import Tech from '../Tech.svelte';
+    import LightDiscordButton from '../LightDiscordButton.svelte';
+    import { links } from '../../constants';
     import { t } from 'i18next';
 </script>
 
@@ -16,7 +18,8 @@
                 <ul class="flex items-center gap-2 sm:gap-4 text-slate-400">
                     <li>
                         <a
-                            href="#"
+                            href={'mailto:' + links.EMAIL}
+                            target="_blank"
                             class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
                         >
                             <i
@@ -26,7 +29,8 @@
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href={links.GITHUB}
+                            target="_blank"
                             class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
                         >
                             <i
@@ -36,7 +40,8 @@
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href={links.LINKEDIN}
+                            target="_blank"
                             class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
                         >
                             <i
@@ -45,14 +50,7 @@
                         </a>
                     </li>
                     <li>
-                        <a
-                            href="#"
-                            class="flex items-center hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
-                        >
-                            <i
-                                class="fa-brands fa-discord w-5 h-5 md:w-6 md:h-6"
-                            />
-                        </a>
+                        <LightDiscordButton />
                     </li>
                 </ul>
             </div>

@@ -1,5 +1,6 @@
 {
     "langSwitcher": "Cambiar a Inglés",
+    "copy": "¡Copiado!",
     "sections": {
         "main": {
             "greet": "Hola, soy",
@@ -21,7 +22,7 @@
                 "flask-animals": "CRUD y API sobre animales (demo)",
                 "rusty": "Aplicación de escritorio y API con gestión de usuarios",
                 "goty": "API con gestión de usuarios (demo)",
-                "nest-graphql-demo": "API de tareas sencilla con gestión de usuarios",
+                "nestjs-graphql-demo": "API de tareas sencilla con gestión de usuarios",
                 "next-trpc-demo": "CRUD simple con gestión de usuarios"
             },
             "message": "Puedes ver aún más proyectos en mi",

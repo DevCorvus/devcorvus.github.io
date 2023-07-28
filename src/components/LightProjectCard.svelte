@@ -5,6 +5,7 @@
     export let description: string;
     export let stack: Tech[];
     export let colorClass: string;
+    export let repo: string;
 </script>
 
 <div
@@ -16,7 +17,8 @@
             <div class="flex items-center justify-between">
                 <span class={`font-bold ${colorClass}`}>{title}</span>
                 <a
-                    href="#"
+                    href={repo}
+                    target="_blank"
                     class="flex item-center bg-slate-500 bg-opacity-50 hover:text-slate-100 focus:text-slate-100 hover:scale-110 focus:scale-110 transition p-1.5 rounded-full shadow-md"
                 >
                     <i class="fa-brands fa-github w-6 h-6" />

@@ -2,6 +2,7 @@
     import SectionWrapper from './SectionWrapper.svelte';
     import ProjectCard from '../ProjectCard.svelte';
     import LightProjectCard from '../LightProjectCard.svelte';
+    import { links } from '../../constants';
     import { t } from 'i18next';
 </script>
 
@@ -21,6 +22,8 @@
             stack={['TypeScript', 'Next.js', 'TailwindCSS']}
             favicon="devcorvus-favicon.png"
             preview="devcorvus.webp"
+            repo="https://github.com/DevCorvus/old-portfolio"
+            site="https://devcorvus.vercel.app"
         />
         <ProjectCard
             reverse={true}
@@ -36,6 +39,8 @@
             ]}
             favicon="pictery-favicon.png"
             preview="pictery.webp"
+            repo="https://github.com/DevCorvus/pictery"
+            site="https://pictery.onrender.com/"
         />
         <ProjectCard
             reverse={false}
@@ -51,6 +56,7 @@
             ]}
             favicon="relyn-favicon.png"
             preview="relyn.webp"
+            repo="https://github.com/DevCorvus/relyn-app"
         />
         <ProjectCard
             reverse={true}
@@ -67,6 +73,7 @@
             ]}
             favicon="baibai-favicon.png"
             preview="baibai.webp"
+            repo="https://github.com/DevCorvus/baibai-client"
         />
         <ProjectCard
             reverse={false}
@@ -84,6 +91,7 @@
             ]}
             favicon="pigeonclub-favicon.png"
             preview="pigeonclub.webp"
+            repo="https://github.com/DevCorvus/pigeon-club"
         />
         <ProjectCard
             reverse={true}
@@ -92,6 +100,7 @@
             stack={['Python', 'Django', 'TailwindCSS', 'PostgreSQL']}
             favicon="djangotodoapp-favicon.png"
             preview="djangotodoapp.webp"
+            repo="https://github.com/DevCorvus/django-todo-app"
         />
         <ProjectCard
             reverse={false}
@@ -106,6 +115,7 @@
             ]}
             favicon="devbanner-favicon.png"
             preview="devbanner.webp"
+            repo="https://github.com/DevCorvus/devbanner"
         />
         <ProjectCard
             reverse={true}
@@ -114,6 +124,7 @@
             stack={['Python', 'Flask', 'Bootstrap', 'SQLite']}
             favicon="flaskanimals-favicon.png"
             preview="flaskanimals.webp"
+            repo="https://github.com/DevCorvus/flask-animals"
         />
     </div>
     <section class="flex flex-col gap-10">
@@ -126,24 +137,30 @@
                 description={t('sections.showcase.projects.rusty')}
                 stack={['Rust', 'Actix Web', 'Tauri', 'Yew', 'SQLite']}
                 colorClass="text-orange-500"
+                repo="https://github.com/DevCorvus/rusty-demo"
             />
             <LightProjectCard
                 title="Goty"
                 description={t('sections.showcase.projects.goty')}
                 stack={['Go', 'SQLite']}
                 colorClass="text-sky-500"
+                repo="https://github.com/DevCorvus/goty"
             />
             <LightProjectCard
-                title="Nest GraphQL demo"
-                description={t('sections.showcase.projects.nest-graphql-demo')}
+                title="NestJS GraphQL demo"
+                description={t(
+                    'sections.showcase.projects.nestjs-graphql-demo'
+                )}
                 stack={['TypeScript', 'Nest.js', 'TypeORM', 'SQLite']}
                 colorClass="text-rose-500"
+                repo="https://github.com/DevCorvus/nestjs-graphql-demo"
             />
             <LightProjectCard
                 title="Next tRPC demo"
                 description={t('sections.showcase.projects.next-trpc-demo')}
                 stack={['TypeScript', 'Nest.js', 'tRPC', 'Prisma', 'SQLite']}
                 colorClass="text-blue-500"
+                repo="https://github.com/DevCorvus/next-trpc-demo"
             />
         </div>
     </section>
@@ -151,7 +168,7 @@
         <p class="text-center text-slate-300">
             {t('sections.showcase.message')}
             <a
-                href="#"
+                href={links.GITHUB}
                 class="text-violet-300 font-semibold hover:text-violet-200 focus:text-violet-300 transition"
                 target="_blank"
             >
