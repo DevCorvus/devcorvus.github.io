@@ -11,3 +11,6 @@ export const links = {
     LINKEDIN: 'https://www.linkedin.com/in/devcorvus',
     DISCORD: 'devcorvus',
 } as const;
+
+export const TITLE = 'DevCorvus';
+export const SITE_PREVIEW_URL = 'https://i.ibb.co/kyVDxF2/devcorvus.webp';

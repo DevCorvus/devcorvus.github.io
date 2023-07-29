@@ -2,11 +2,13 @@
 import '@fontsource/montserrat';
 import '@fontsource/nunito';
 
-import i18next from 'i18next';
+import i18next, { t } from 'i18next';
 
 import LanguageSwitcher from '../components/LanguageSwitcher.svelte';
 import Background from '../components/Background.svelte';
 import Surface from '../components/Surface.svelte';
+
+import { TITLE, SITE_PREVIEW_URL } from '../constants';
 ---
 
 <html lang={i18next.language} class="scroll-smooth">
@@ -16,7 +18,21 @@ import Surface from '../components/Surface.svelte';
         <link rel="apple-touch-icon" href="/apple-touch-favicon.png" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>DevCorvus</title>
+        <meta
+            name="keywords"
+            content="portfolio, web developer, software developer, web developer portfolio"
+        />
+        <meta name="description" content={t('description')} />
+        <meta property="og:site_name" content={TITLE} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:image" content={SITE_PREVIEW_URL} />
+        <meta property="og:description" content={t('description')} />
+        <meta property="twitter:title" content={TITLE} />
+        <meta property="twitter:image" content={SITE_PREVIEW_URL} />
+        <meta property="twitter:description" content={t('description')} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <title>{TITLE}</title>
         <script
             is:inline
             src="https://kit.fontawesome.com/da377e052d.js"
