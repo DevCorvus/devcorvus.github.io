@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import i18next, { t, changeLanguage } from "i18next";
+
+changeLanguage("es");
+---
+
+<Layout>
+    <div class="h-screen flex items-center justify-center">
+        <div class="flex flex-col items-center gap-4 md:mb-[10vh] xl:mb-[25vh]">
+            <span class="font-nunito font-bold text-3xl">
+                {t('not-found.message')}
+            </span>
+            <a
+                href={'/' + (i18next.language === 'en' ? '' : 'es')}
+                class="text-xl hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
+            >
+                {t('not-found.link')}
+            </a>
+        </div>
+    </div>
+</Layout>

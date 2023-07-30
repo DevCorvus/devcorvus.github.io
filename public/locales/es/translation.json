@@ -35,5 +35,9 @@
         }
     },
     "satellite": "¡Contáctame!",
+    "not-found": {
+        "message": "¡Este no es el lugar!",
+        "link": "Volver a casa"
+    },
     "message": "¡Hecho con amor, pasión y diversión!"
 }
