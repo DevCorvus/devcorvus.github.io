@@ -3,7 +3,7 @@
     import Tech from '../Tech.svelte';
     import LightDiscordButton from '../LightDiscordButton.svelte';
     import { links } from '../../constants';
-    import { t } from 'i18next';
+    import { i18n } from '../../utils/i18n';
 </script>
 
 <SectionWrapper id="contact">
@@ -13,7 +13,7 @@
         <div class="flex-1 flex flex-col gap-8">
             <div class="flex items-center justify-between">
                 <header class="text-2xl font-nunito font-bold">
-                    <h2>✨ {t('sections.bottom.title')}</h2>
+                    <h2>✨ {$i18n.t('sections.bottom.title')}</h2>
                 </header>
                 <ul class="flex items-center gap-2 sm:gap-4 text-slate-400">
                     <li>
@@ -55,7 +55,7 @@
                 </ul>
             </div>
             <div>
-                <p>{t('sections.bottom.content')}</p>
+                <p>{$i18n.t('sections.bottom.content')}</p>
             </div>
         </div>
         <div class="flex-1 flex justify-center">

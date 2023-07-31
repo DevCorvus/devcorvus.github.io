@@ -1,7 +1,7 @@
 <script lang="ts">
     import { copy } from 'svelte-copy';
     import { fade } from 'svelte/transition';
-    import { t } from 'i18next';
+    import { i18n } from '../utils/i18n';
     import { links } from '../constants';
 
     let tooltip = false;
@@ -31,7 +31,7 @@
             transition:fade
             class="absolute -top-6 left-0 w-full flex items-center justify-center text-sm text-violet-300"
         >
-            {t('copy')}
+            {$i18n.t('copy')}
         </span>
     {/if}
 </div>

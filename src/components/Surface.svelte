@@ -3,7 +3,7 @@
     import flag from '/images/flag.svg';
     import satelliteImage from '/images/satellite.png';
     import { onMount } from 'svelte';
-    import { t } from 'i18next';
+    import { i18n } from '../utils/i18n';
 
     let satellite: HTMLDivElement;
 
@@ -48,7 +48,7 @@
             <span
                 class="py-1 px-2 text-violet-200 bg-violet-400 bg-opacity-25 rounded-xl rounded-bl-none text-sm"
             >
-                {t('satellite')}
+                {$i18n.t('satellite')}
             </span>
         </div>
         <img
@@ -60,7 +60,7 @@
     <p
         class="absolute bottom-0 left-0 w-full text-center text-xs text-violet-300"
     >
-        {t('message')}
+        {$i18n.t('message')}
     </p>
 </footer>
 

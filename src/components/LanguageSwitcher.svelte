@@ -1,11 +1,11 @@
 <script lang="ts">
-    import i18next, { t } from 'i18next';
+    import { i18n } from '../utils/i18n';
 
-    const langToSwitch = i18next.language === 'en' ? 'es' : '';
+    const langToSwitch = $i18n.language === 'en' ? 'es' : '';
 </script>
 
 <a
-    title={t('langSwitcher')}
+    title={$i18n.t('langSwitcher')}
     href={`/${langToSwitch}`}
     class="z-50 absolute top-3 right-3 md:top-5 md:right-5 text-slate-300 hover:text-violet-300 focus:text-violet-300 hover:scale-110 focus:scale-110 transition"
 >

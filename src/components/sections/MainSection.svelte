@@ -3,7 +3,7 @@
     import Logo from '../Logo.svelte';
     import DiscordButton from '../DiscordButton.svelte';
     import { screenSize, links } from '../../constants';
-    import { t } from 'i18next';
+    import { i18n } from '../../utils/i18n';
     import { fade } from 'svelte/transition';
 
     let innerWidth: number;
@@ -21,7 +21,7 @@
 
 <SectionWrapper
     id="main"
-    next={{ id: 'showcase', text: t('sections.main.next') }}
+    next={{ id: 'showcase', text: $i18n.t('sections.main.next') }}
 >
     <div
         class="flex flex-col md:flex-row-reverse md:my-auto gap-10 text-center md:text-left"
@@ -31,7 +31,7 @@
         {/if}
         <div class="flex-1 flex flex-col gap-8">
             <header class="flex flex-col gap-2">
-                <span class="ml-1">{t('sections.main.greet')}</span>
+                <span class="ml-1">{$i18n.t('sections.main.greet')}</span>
                 <div
                     class="relative font-nunito uppercase tracking-wide font-black text-4xl"
                 >
@@ -59,11 +59,11 @@
                 <span
                     class="font-semibold font-nunito uppercase bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-slate-100"
                 >
-                    {t('sections.main.subtitle')}
+                    {$i18n.t('sections.main.subtitle')}
                 </span>
             </header>
             <div class="leading-relaxed">
-                <p>{t('sections.main.content')}</p>
+                <p>{$i18n.t('sections.main.content')}</p>
             </div>
         </div>
         <div class="flex-1 flex flex-col items-center justify-around">
