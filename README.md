@@ -2,7 +2,9 @@
 
 This is my new personal portfolio, developed using Astro, Svelte and TailwindCSS!
 
-![DevCorvus Preview](https://i.ibb.co/kyVDxF2/devcorvus.webp)
+[![DevCorvus Preview](https://i.ibb.co/kyVDxF2/devcorvus.webp)](https://devcorvus.github.io)
+
+Check it out: https://devcorvus.github.io
 
 ## TL;DR
 
