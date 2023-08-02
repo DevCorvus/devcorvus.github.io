@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
     import SectionWrapper from './SectionWrapper.svelte';
     import Logo from '../Logo.svelte';
     import DiscordButton from '../DiscordButton.svelte';
@@ -9,12 +10,14 @@
     let innerWidth: number;
     let showAlterName = false;
 
-    setInterval(() => {
-        showAlterName = true;
-        setTimeout(() => {
-            showAlterName = false;
-        }, 2000);
-    }, 6000);
+    onMount(() => {
+        setInterval(() => {
+            showAlterName = true;
+            setTimeout(() => {
+                showAlterName = false;
+            }, 2000);
+        }, 6000);
+    });
 </script>
 
 <svelte:window bind:innerWidth />
@@ -42,19 +45,15 @@
                             <span in:fade>DevCorvus</span>
                         {/if}
                     </h1>
-                    {#if !showAlterName}
-                        <span
-                            class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
-                        >
+                    <span
+                        class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
+                    >
+                        {#if !showAlterName}
                             Luis Portillo
-                        </span>
-                    {:else}
-                        <span
-                            class="absolute left-0.5 top-0.5 w-full text-slate-500 -z-10 pointer-events-none"
-                        >
+                        {:else}
                             DevCorvus
-                        </span>
-                    {/if}
+                        {/if}
+                    </span>
                 </div>
                 <span
                     class="font-semibold font-nunito uppercase bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-slate-100"
