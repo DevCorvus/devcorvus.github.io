@@ -17,13 +17,19 @@
     <div class="flex flex-col items-center gap-8 md:gap-10 xl:gap-16">
         <ProjectCard
             reverse={false}
-            title="DevCorvus (Old)"
-            description={$i18n.t('sections.showcase.projects.old-portfolio')}
-            stack={['TypeScript', 'Next.js', 'TailwindCSS']}
-            favicon="devcorvus-favicon.png"
-            preview="devcorvus.webp"
-            repo="https://github.com/DevCorvus/old-portfolio"
-            site="https://devcorvus.vercel.app"
+            title="Cartago"
+            description={$i18n.t('sections.showcase.projects.cartago')}
+            stack={[
+                'TypeScript',
+                'Next.js',
+                'TailwindCSS',
+                'Prisma',
+                'PostgreSQL',
+            ]}
+            favicon="cartago-favicon.png"
+            preview="cartago.webp"
+            repo="https://github.com/DevCorvus/cartago"
+            site="https://cartago.vercel.app/"
         />
         <ProjectCard
             reverse={true}
@@ -44,6 +50,16 @@
         />
         <ProjectCard
             reverse={false}
+            title="DevCorvus (Old)"
+            description={$i18n.t('sections.showcase.projects.old-portfolio')}
+            stack={['TypeScript', 'Next.js', 'TailwindCSS']}
+            favicon="devcorvus-favicon.png"
+            preview="devcorvus.webp"
+            repo="https://github.com/DevCorvus/old-portfolio"
+            site="https://devcorvus.vercel.app"
+        />
+        <ProjectCard
+            reverse={true}
             title="Relyn App"
             description={$i18n.t('sections.showcase.projects.relyn')}
             stack={[
@@ -59,7 +75,7 @@
             repo="https://github.com/DevCorvus/relyn-app"
         />
         <ProjectCard
-            reverse={true}
+            reverse={false}
             title="Baibai"
             description={$i18n.t('sections.showcase.projects.baibai')}
             stack={[
@@ -76,7 +92,7 @@
             repo="https://github.com/DevCorvus/baibai-client"
         />
         <ProjectCard
-            reverse={false}
+            reverse={true}
             title="Pigeon Club"
             description={$i18n.t('sections.showcase.projects.pigeon-club')}
             stack={[
@@ -94,7 +110,7 @@
             repo="https://github.com/DevCorvus/pigeon-club"
         />
         <ProjectCard
-            reverse={true}
+            reverse={false}
             title="Django Todo App"
             description={$i18n.t('sections.showcase.projects.django-todo-app')}
             stack={['Python', 'Django', 'TailwindCSS', 'PostgreSQL']}
@@ -103,7 +119,7 @@
             repo="https://github.com/DevCorvus/django-todo-app"
         />
         <ProjectCard
-            reverse={false}
+            reverse={true}
             title="DevBanner"
             description={$i18n.t('sections.showcase.projects.devbanner')}
             stack={[
@@ -118,7 +134,7 @@
             repo="https://github.com/DevCorvus/devbanner"
         />
         <ProjectCard
-            reverse={true}
+            reverse={false}
             title="Flask Animals"
             description={$i18n.t('sections.showcase.projects.flask-animals')}
             stack={['Python', 'Flask', 'Bootstrap', 'SQLite']}

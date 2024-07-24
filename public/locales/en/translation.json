@@ -13,8 +13,9 @@
             "title": "Projects",
             "subtitle": "Others",
             "projects": {
-                "old-portfolio": "Personal website and portfolio",
+                "cartago": "Ecommerce platform demo",
                 "pictery": "Gallery management app",
+                "old-portfolio": "Personal website and portfolio",
                 "relyn": "Social media app",
                 "baibai": "E-Commerce and API (demo)",
                 "pigeon-club": "Real-time chat (demo)",
