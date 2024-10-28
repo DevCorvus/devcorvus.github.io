@@ -16,6 +16,16 @@
     </header>
     <div class="flex flex-col items-center gap-8 md:gap-10 xl:gap-16">
         <ProjectCard
+            reverse={true}
+            title="Slangio"
+            description={$i18n.t('sections.showcase.projects.slangio')}
+            stack={['TypeScript', 'Vue.js', 'TailwindCSS', 'daisyUI']}
+            favicon="slangio-favicon.png"
+            preview="slangio.webp"
+            repo="https://github.com/DevCorvus/slangio"
+            site="https://slangio.netlify.app/"
+        />
+        <ProjectCard
             reverse={false}
             title="Cartago"
             description={$i18n.t('sections.showcase.projects.cartago')}
@@ -165,7 +175,7 @@
             <LightProjectCard
                 title="NestJS GraphQL demo"
                 description={$i18n.t(
-                    'sections.showcase.projects.nestjs-graphql-demo'
+                    'sections.showcase.projects.nestjs-graphql-demo',
                 )}
                 stack={['TypeScript', 'Nest.js', 'TypeORM', 'SQLite']}
                 colorClass="text-rose-500"
@@ -174,7 +184,7 @@
             <LightProjectCard
                 title="Next tRPC demo"
                 description={$i18n.t(
-                    'sections.showcase.projects.next-trpc-demo'
+                    'sections.showcase.projects.next-trpc-demo',
                 )}
                 stack={['TypeScript', 'Nest.js', 'tRPC', 'Prisma', 'SQLite']}
                 colorClass="text-blue-500"

@@ -13,6 +13,7 @@
             "title": "Proyectos",
             "subtitle": "Otros",
             "projects": {
+                "slangio": "Aplicación de gestión de vocabulario",
                 "cartago": "Plataforma eCommerce (demo)",
                 "pictery": "Gestor de galerías de imágenes",
                 "old-portfolio": "Sitio web personal y portafolio",
