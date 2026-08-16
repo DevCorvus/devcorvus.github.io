@@ -16,6 +16,15 @@
     </header>
     <div class="flex flex-col items-center gap-8 md:gap-10 xl:gap-16">
         <ProjectCard
+            reverse={false}
+            title="PREMURA"
+            description={$i18n.t('sections.showcase.projects.premura')}
+            stack={['TypeScript', 'Vue.js', 'TailwindCSS', 'Pixi.js']}
+            favicon="premura-favicon.png"
+            preview="premura.webp"
+            site="https://devcorvus.itch.io/premura"
+        />
+        <ProjectCard
             reverse={true}
             title="Slangio"
             description={$i18n.t('sections.showcase.projects.slangio')}

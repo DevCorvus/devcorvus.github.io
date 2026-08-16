@@ -13,6 +13,7 @@
             "title": "Proyectos",
             "subtitle": "Otros",
             "projects": {
+                "premura": "Juego de estrategia con elementos RTS y TD",
                 "slangio": "Aplicación de gestión de vocabulario",
                 "cartago": "Plataforma eCommerce (demo)",
                 "pictery": "Gestor de galerías de imágenes",
